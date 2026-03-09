@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda</title>
+    <style>
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            scroll-behavior: smooth;
+            background-color: #f9f7f2;
+            color: #333;
+        }
+
+ 
+        .recepcion {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070') no-repeat center center/cover;
+            color: white;
+        }
+
+        .recepcion h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .recepcion p {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .btn-invitacion {
+            padding: 15px 30px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+        }
+
+        .btn-invitacion:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        /* Sección de Invitación */
+        .invitacion {
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .invitacion h2 {
+            font-size: 2.5rem;
+            color: #b8926a;
+            margin-bottom: 20px;
+        }
+
+        .detalles {
+            margin: 40px 0;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .fecha {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .ubicacion-mapa {
+            margin-top: 30px;
+            border: 1px solid #eee;
+            padding: 10px;
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="recepcion">
+        <h1>¡Nos Casamos!</h1>
+        <p>Acompañanos en este día tan especial</p>
+        <a href="#invitacion-detalle" class="btn-invitacion">Ver Invitación</a>
+    </section>
+
+    <section id="invitacion-detalle" class="invitacion">
+        <h2>Nuestra Boda</h2>
+        <p>Hay momentos en la vida que son únicos, pero compartirlos con las personas que más queremos los hace inolvidables.</p>
+        
+        <div class="detalles">
+            <span class="fecha">Sábado, 15 de Marzo de 2026</span>
+            <p><strong>Ceremonia:</strong> 17:00 hrs - Parroquia de Santa Ana</p>
+            <p><strong>Recepción:</strong> 19:30 hrs - Jardín de los Eventos</p>
+        </div>
+
+        <div class="ubicacion-mapa">
+            <p>📍 Mochitlan, Domicilio Conocido</p>
+            </div>
+
+        <p style="margin-top: 40px; font-style: italic;">Favor de confirmar su asistencia antes del 1 de Mayo.</p>
+    </section>
+
+    <footer>
+        <p>Hecho con ❤️ para nuestra familia y amigos</p>
+    </footer>
+
+</body>
+</html>
